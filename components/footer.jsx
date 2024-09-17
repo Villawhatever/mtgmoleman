@@ -1,4 +1,6 @@
+import Image from 'next/image';
 import Link from 'next/link';
+import githubLogo from 'public/images/github-mark-white.svg';
 
 export function Footer() {
     return (
