@@ -1,5 +1,4 @@
 import { ContextAlert } from 'components/context-alert';
-import { getNetlifyContext } from 'utils';
 
 export default function Page() {
     return (
@@ -7,7 +6,7 @@ export default function Page() {
             <section className="flex flex-col items-start gap-3 sm:gap-4">
                 <ContextAlert />
                 <p className="text-lg">From <b>Villa</b>, with love and grumpiness that this project needs to exist.</p>
-                <p className="text-lg">Am I missing something? Email me at judgevillawhatever@gmail.com</p>
+                <p className="text-lg">Am I missing something that you think should be here? Email me at judgevillawhatever@gmail.com</p>
             </section>
         </main>
     );
