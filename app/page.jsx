@@ -1,6 +1,10 @@
 import { RulingCard } from 'components/ruling-card';
 import data from 'data/magic.json';
 
+console.log("what");
+console.log(data);
+data.forEach(r => console.log(r));
+console.log("??");
 
 export default function Page() {
     return (
