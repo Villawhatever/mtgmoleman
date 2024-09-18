@@ -1,0 +1,9 @@
+[
+    {
+      "ask": "I control Jace, Wilder of Mysteries, Future Sight, a single Island, and a Chromatic Sphere. The only card in my library is Colossal Dreadmaw. Can I attempt to cast Dreadmaw, sacrifice Sphere, and win the game?",
+      "answer": "[...] It works. While you must be legally allowed to cast a spell to begin the casting process, whether you can pay for it or how you're going to pay for isn't part of this calculation. The game can't predict what mana you'll have access to. So starting to cast the Dreadmaw is fine. It's on the stack, and your library is empty. We eventually get to mana abilities, and you activate Chromatic Sphere. Drawing a card becomes a win. Nothing illegal has happened at this point. Something illegal was about to happen, but the game can't know that, and you won just before rule 730 would have kicked in. Unpayable costs are a red herring here. Nothing here is unpayable, just not currently payable by you. Unpayable is described pretty specifically in the CR and limited to cases of no mana cost, costs based on such absent mana costs, and 903.4f for color identity=0. You still need to be able to cast a spell with an unpayable cost so you can cast them w/o paying their mana costs if allowed.",
+      "from": "Matt Tabak",
+      "source": "https://x.com/WotC_Matt/status/1836496697918394697?t=tm1L8hqyl2FedBTgUO90Ag",
+      "tags": ["winning the game", "casting spells", "601.3g"]
+    }
+  ]
