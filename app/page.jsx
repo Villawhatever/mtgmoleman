@@ -8,6 +8,7 @@ export default function Page() {
             {data.forEach(ruling => {
                     <section className="flex flex-col items-start gap-3 sm:gap-4">
                         <RulingCard ruling={ruling} />
+                        <h1>{ruling.from}</h1>
                     </section>
                 })
             }
