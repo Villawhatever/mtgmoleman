@@ -11,10 +11,11 @@ export default function Page() {
         <main className="flex flex-col gap-8 sm:gap-16">
             {console.log(data)}
             {data.forEach(ruling => {
-                    <section className="flex flex-col items-start gap-3 sm:gap-4">
-                        <RulingCard ruling={ruling} />
-                        <h1>{ruling.from}</h1>
-                    </section>
+                    <h1>Yo what the fuck {ruling.from}</h1>
+                    // <section className="flex flex-col items-start gap-3 sm:gap-4">
+                    //     <RulingCard ruling={ruling} />
+                    //     <h1>{ruling.from}</h1>
+                    // </section>
                 })
             }
             {/* <section className="flex flex-col items-start gap-3 sm:gap-4">
