@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import moleman from 'public/jacemoleman.png';
+import moleman from 'public/images/jacemoleman.png';
 
 const navItems = [
     { linkText: 'Home', href: '/' },
