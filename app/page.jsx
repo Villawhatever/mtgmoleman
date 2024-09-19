@@ -1,5 +1,8 @@
 import { RulingCard } from 'components/ruling-card';
 import data from 'data/magic.json';
+import Link from 'next/link';
+import { Markdown } from 'components/markdown';
+import { RandomQuote } from 'components/random-quote';
 
 export default function Page() {
     return (
@@ -15,7 +18,6 @@ export default function Page() {
             }
             <section className="flex flex-col items-start gap-3 sm:gap-4">
                 
-                <ContextAlert />
                 <RulingCard ruling={data[0]} />
                 <h1 className="mb-0">Netlify Platform Starter - Next.js</h1>
                 <p className="text-lg">Get started with Next.js and Netlify in seconds.</p>
@@ -29,7 +31,6 @@ export default function Page() {
             {!!ctx && (
                 <section className="flex flex-col gap-4">
                     <Markdown content={contextExplainer} />
-                    <RuntimeContextCard />
                 </section>
             )}
             <section className="flex flex-col gap-4">
@@ -37,7 +38,6 @@ export default function Page() {
                 <RandomQuote />
                 <Markdown content={postDynamicContentExplainer} />
             </section>
-            !!cards?.length && <CardsGrid cards={cards} />
         </main>
     );
 }
