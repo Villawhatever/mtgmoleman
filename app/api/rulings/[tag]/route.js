@@ -16,6 +16,6 @@ export async function GET(_request, { params }) {
     return Response.json(rulings);
   } catch (ex) {
     console.error(ex);
-    return Response.json(null);
+    return Response.json({});
   }
 }
