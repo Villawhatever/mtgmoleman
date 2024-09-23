@@ -1,4 +1,4 @@
-import clientPromise from "app/lib/mongodb.js";
+import clientPromise from "app/lib/mongodb";
 
 export const revalidate = 60;
 

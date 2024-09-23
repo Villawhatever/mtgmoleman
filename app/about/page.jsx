@@ -1,4 +1,4 @@
-import { ContextAlert } from "components/context-alert.jsx";
+import { ContextAlert } from "components/context-alert";
 
 export default function Page() {
     return (
