@@ -1,5 +1,12 @@
 [
   {
+    "ask": "How does Miracle on enchantment cards [from Aminatou, Veil Piercer] work with Virtue cycle [e.g. Virtue of Loyalty]? Can I Miracle play the Adventure Half?",
+    "answer": "You can cast an Adventure of an enchantment card as the triggered ability of miracle resolves.",
+    "from": "Jess Dunks",
+    "source": "https://twitter.com/Dunkatog/status/1836127155610427544",
+    "tags": ["Miracle", "adventurer cards", "Aminatou, Veil Piercer"]
+  },
+  {
     "ask": "603.2e suggests that Tishana's Tidebinder should NOT remove abilities from Guardian of Ghirapur when you counter its delayed trigger, even though a creature was its source. But on Arena, it does. Is this accurate?",
     "answer": "I think the arena behavior you describe is the desired outcome; 603.2e probably needs more (or perhaps less?) specificity. We’ll look into it alongside future rules updates we’re working on.",
     "from": "Jess Dunks",
