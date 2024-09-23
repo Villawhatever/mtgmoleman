@@ -1,7 +1,5 @@
 "use client";
 
-import Link from "next/link";
-
 export function Card({ ruling }) {
     return (
         <div className="bg-white card text-neutral-600">
