@@ -10,7 +10,7 @@ export function Card({ ruling }) {
                         <hr />
                         <h3 className="text-xl text-neutral-900 font-bold">&ldquo;{ruling.answer}&rdquo;</h3>
                         <p>
-                            {' '}
+                            {" "}
                             - {ruling.from} (<a href={ruling.source}>source</a>)
                         </p>
                         <p className="pt-2.5 mt-2.5 border-t border-dashed text-secondary border-neutral-200">
