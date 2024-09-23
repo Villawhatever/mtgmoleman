@@ -22,5 +22,6 @@ export async function GET(request) {
     return Response.json(rulings);
   } catch (ex) {
     console.error(ex);
+    return Response.json(null);
   }
 }
