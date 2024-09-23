@@ -17,12 +17,12 @@ export function Header() {
                 <ul className="flex flex-wrap gap-x-4 gap-y-1">
                     {navItems.map((item, index) => (
                         <li key={index}>
-                            <Link
+                            <a
                                 href={item.href}
                                 className="inline-block px-1.5 py-1 transition hover:opacity-80 sm:px-3 sm:py-2"
                             >
                                 {item.linkText}
-                            </Link>
+                            </a>
                         </li>
                     ))}
                 </ul>

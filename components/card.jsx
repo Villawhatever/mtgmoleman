@@ -1,19 +1,27 @@
-import Link from 'next/link';
+"use client";
 
-export function Card({ title, text, linkText, href, children }) {
+import Link from "next/link";
+
+export function Card({ ruling }) {
     return (
-        <div className="bg-white text-neutral-600 card">
+        <div className="bg-white card text-neutral-600">
             <div className="card-body">
-                {title && <h3 className="text-neutral-900 card-title">{title}</h3>}
-                {text && <p>{text}</p>}
-                {linkText && href && (
-                    <div className="card-actions">
-                        <Link href={href} className="transition link text-neutral-900 hover:opacity-80">
-                            source
-                        </Link>
-                    </div>
-                )}
-                {children}
+                {
+                    <>
+                        <h3 className="text-xl text-neutral-900 font-bold">&ldquo;{ruling.ask}&rdquo;</h3>
+                        <hr />
+                        <h3 className="text-xl text-neutral-900 font-bold">&ldquo;{ruling.answer}&rdquo;</h3>
+                        <p>
+                            {' '}
+                            - {ruling.from} (<a href={ruling.source}>source</a>)
+                        </p>
+                        <p className="pt-2.5 mt-2.5 border-t border-dashed text-secondary border-neutral-200">
+                            <span className="text-sm italic">
+                                Tag{ruling.tags.length > 1 ? "s" : ""}: {ruling.tags.map((tag, index) => ([index > 0 && " | ", <a href={`/?tag=${tag}`} key={index}>{tag}</a>]))}
+                            </span>
+                        </p>
+                    </>
+                }
             </div>
         </div>
     );
