@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Card } from "components/card";
+import { Card } from "components/card.jsx";
 import { useSearchParams } from "next/navigation";
 
 export default function Page() {
