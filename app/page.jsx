@@ -7,7 +7,7 @@ import { useSearchParams } from "next/navigation";
 export default function Page() {
     const [data, setData] = useState(null)
     const [isLoading, setLoading] = useState(true)
-    
+
     const queryString = useSearchParams();
 
     useEffect(() => {
