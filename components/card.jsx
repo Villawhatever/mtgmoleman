@@ -18,7 +18,7 @@ export function Card({ ruling }) {
                             <span className="text-sm italic">
                                 Tag{ruling.tags.length > 1 ? "s" : ""}: 
                                 { ruling.tags
-                                    .sort((a, b) => a.localCompare(b))
+                                    .sort((a, b) => a.localeCompare(b))
                                     .map((tag, index) => (
                                     [
                                         index > 0 && " | ",
