@@ -8,8 +8,10 @@ export default function Page() {
     const [data, setData] = useState(null)
     const [isLoading, setLoading] = useState(true)
     
+    const queryString = useSearchParams();
+
     useEffect(() => {
-        const tag = useSearchParams().get("tag");
+        const tag = queryString.get("tag");
 
         fetch("/api/rulings" + `${tag ? `?tag=${tag}` : ""}`)
         .then((res) => res.json())
@@ -17,8 +19,8 @@ export default function Page() {
             setData(data)
             setLoading(false)
         })
-    }, [])
-    
+    }, [queryString])
+
     if (isLoading) {
         return <p>Loading...</p>
     }
