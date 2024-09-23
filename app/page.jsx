@@ -13,7 +13,7 @@ export default function Page() {
     useEffect(() => {
         const tag = queryString.get("tag");
 
-        fetch("/api/rulings" + `${tag ? `?tag=${tag}` : ""}`)
+        fetch("/api/rulings" + `${tag ? `/${tag}` : ""}`)
         .then((res) => res.json())
         .then((data) => {
             setData(data)

@@ -16,7 +16,18 @@ export function Card({ ruling }) {
                         </p>
                         <p className="pt-2.5 mt-2.5 border-t border-dashed text-secondary border-neutral-200">
                             <span className="text-sm italic">
-                                Tag{ruling.tags.length > 1 ? "s" : ""}: {ruling.tags.map((tag, index) => ([index > 0 && " | ", <Link href={`/?tag=${tag}`} key={index}>{tag}</Link>]))}
+                                Tag{ruling.tags.length > 1 ? "s" : ""}: 
+                                { ruling.tags.map((tag, index) => (
+                                    [
+                                        index > 0 && " | ",
+                                        <Link href={{
+                                            pathname: "/",
+                                            query: {
+                                              tag: tag
+                                            }
+                                          }} key={index}>{tag}</Link>
+                                    ]
+                                ))}
                             </span>
                         </p>
                     </>
