@@ -8,23 +8,23 @@ For full functionality, either run this site locally via \`netlify dev\`
 `;
 
 export function ContextAlert(props) {
-    const { addedChecksFunction } = props;
-    const ctx = getNetlifyContext();
+  const { addedChecksFunction } = props;
+  const ctx = getNetlifyContext();
 
-    let markdownText = null;
-    if (!ctx) {
-        markdownText = noNetlifyContextAlert;
-    } else if (addedChecksFunction) {
-        markdownText = addedChecksFunction(ctx);
-    }
+  let markdownText = null;
+  if (!ctx) {
+      markdownText = noNetlifyContextAlert;
+  } else if (addedChecksFunction) {
+      markdownText = addedChecksFunction(ctx);
+  }
 
-    if (markdownText) {
-        return (
-            <Alert>
-                <Markdown content={markdownText} />
-            </Alert>
-        );
-    } else {
-        return <></>;
-    }
+  if (markdownText) {
+      return (
+          <Alert>
+              <Markdown content={markdownText} />
+          </Alert>
+      );
+  } else {
+      return <></>;
+  }
 }
