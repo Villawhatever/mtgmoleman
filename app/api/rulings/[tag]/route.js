@@ -12,7 +12,7 @@ export async function GET(_request, { params }) {
     const db = client.db("Moleman");
     const tag = params.tag;
 
-    const rulings = await db.collection("rulings").find({ tags: tag }).toArray();
+    const rulings = await db.collection("rulings").find({ tags: tag, redacted: false }).toArray();
     return Response.json(rulings);
   } catch (ex) {
     console.error(ex);
